@@ -90,6 +90,11 @@ class ViewController: UIViewController {
                                     
                                     self.dismiss(animated: true, completion: nil)
                                     
+                                    //DispatchQueue
+                                    DispatchQueue.main.async {
+                                        self.performSegue(withIdentifier: "irTela2", sender: nil)
+                                    }
+                                    
                                 } else {
                                     print("Algo errado aconteceu")
                                 }

@@ -17,6 +17,8 @@
 		7803794E21A76EF800D8148F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803794D21A76EF800D8148F /* Alert.swift */; };
 		7803795021A77A1000D8148F /* DodFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803794F21A77A1000D8148F /* DodFeedViewController.swift */; };
 		78F3635721A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3635621A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift */; };
+		B2286F5A3C2352D97FCA45AF /* Pods_IdDogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCF6DBAB24D182BD8E1122F /* Pods_IdDogTests.framework */; };
+		FCEF7F778B8E53DA0F35107D /* Pods_IdDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659E943CF6A10F6F744DC7E7 /* Pods_IdDog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271535A64FF47C2DFA92D2AC /* Pods-IdDogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdDogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IdDogTests/Pods-IdDogTests.release.xcconfig"; sourceTree = "<group>"; };
+		2DCF6DBAB24D182BD8E1122F /* Pods_IdDogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdDogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		659E943CF6A10F6F744DC7E7 /* Pods_IdDog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdDog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D4ED4A5CC4C4FC3BA8C1B3 /* Pods-IdDog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdDog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IdDog/Pods-IdDog.debug.xcconfig"; sourceTree = "<group>"; };
 		7803792621A763A900D8148F /* IdDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7803792921A763A900D8148F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7803792B21A763A900D8148F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +50,8 @@
 		7803794D21A76EF800D8148F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7803794F21A77A1000D8148F /* DodFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodFeedViewController.swift; sourceTree = "<group>"; };
 		78F3635621A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsFeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		A8093644A1C95CBEAC013CA0 /* Pods-IdDogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdDogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IdDogTests/Pods-IdDogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE07C8779C8B92D721A14509 /* Pods-IdDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdDog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IdDog/Pods-IdDog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCEF7F778B8E53DA0F35107D /* Pods_IdDog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,18 +67,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2286F5A3C2352D97FCA45AF /* Pods_IdDogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B7C326EFD7F03B8D9A88866 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76D4ED4A5CC4C4FC3BA8C1B3 /* Pods-IdDog.debug.xcconfig */,
+				BE07C8779C8B92D721A14509 /* Pods-IdDog.release.xcconfig */,
+				A8093644A1C95CBEAC013CA0 /* Pods-IdDogTests.debug.xcconfig */,
+				271535A64FF47C2DFA92D2AC /* Pods-IdDogTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E69B6825BAE43A94AEB30F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659E943CF6A10F6F744DC7E7 /* Pods_IdDog.framework */,
+				2DCF6DBAB24D182BD8E1122F /* Pods_IdDogTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7803791D21A763A900D8148F = {
 			isa = PBXGroup;
 			children = (
 				7803792821A763A900D8148F /* IdDog */,
 				7803793D21A763AB00D8148F /* IdDogTests */,
 				7803792721A763A900D8148F /* Products */,
+				0B7C326EFD7F03B8D9A88866 /* Pods */,
+				6E69B6825BAE43A94AEB30F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7803794321A763AB00D8148F /* Build configuration list for PBXNativeTarget "IdDog" */;
 			buildPhases = (
+				46507ED08F67103D46576ED3 /* [CP] Check Pods Manifest.lock */,
 				7803792221A763A900D8148F /* Sources */,
 				7803792321A763A900D8148F /* Frameworks */,
 				7803792421A763A900D8148F /* Resources */,
+				1E44B92D7FB98EC8F3E44917 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7803794621A763AB00D8148F /* Build configuration list for PBXNativeTarget "IdDogTests" */;
 			buildPhases = (
+				A363A0AECD6380B5B0C9DE78 /* [CP] Check Pods Manifest.lock */,
 				7803793621A763AB00D8148F /* Sources */,
 				7803793721A763AB00D8148F /* Frameworks */,
 				7803793821A763AB00D8148F /* Resources */,
@@ -203,6 +238,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E44B92D7FB98EC8F3E44917 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IdDog/Pods-IdDog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IdDog/Pods-IdDog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46507ED08F67103D46576ED3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IdDog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A363A0AECD6380B5B0C9DE78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IdDogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7803792221A763A900D8148F /* Sources */ = {
@@ -372,6 +476,7 @@
 		};
 		7803794421A763AB00D8148F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D4ED4A5CC4C4FC3BA8C1B3 /* Pods-IdDog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -389,6 +494,7 @@
 		};
 		7803794521A763AB00D8148F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE07C8779C8B92D721A14509 /* Pods-IdDog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +512,7 @@
 		};
 		7803794721A763AB00D8148F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8093644A1C95CBEAC013CA0 /* Pods-IdDogTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -426,6 +533,7 @@
 		};
 		7803794821A763AB00D8148F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271535A64FF47C2DFA92D2AC /* Pods-IdDogTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

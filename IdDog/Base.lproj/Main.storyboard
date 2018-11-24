@@ -63,7 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="textFieldEmail" destination="1t8-iB-hPo" id="9NQ-1x-HvI"/>
-                        <segue destination="waE-aZ-BlC" kind="show" id="EPs-Wy-nkl"/>
+                        <segue destination="waE-aZ-BlC" kind="show" identifier="irTela2" id="EPs-Wy-nkl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -103,7 +103,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qYv-pW-qID" customClass="DogsFeedCollectionViewCell" customModule="IdDog" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="qYv-pW-qID" customClass="DogsFeedCollectionViewCell" customModule="IdDog" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

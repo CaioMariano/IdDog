@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFNetworking
 
     class DodFeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
         
@@ -119,7 +120,7 @@ import UIKit
             let dog = self.dogs[indexPath.row]
             if let posterPath = dog as? String {
                 let imageUrl = URL(string: posterPath)
-                //cell.dogImage.kf.setImageWith(imageUrl!)
+                cell.dogImage.setImageWith(imageUrl!)
                 
             }
             
