@@ -23,7 +23,7 @@ import AFNetworking
         
         var dogs: [String] = []
         
-        var husky:String = "husky"
+        var dogsType:String = "husky"
         
         let defaultValues = UserDefaults.standard
         
@@ -46,7 +46,7 @@ import AFNetworking
                 
             } else {
                 
-                let task = loadRequest(husky: (husky))
+                let task = loadRequest(husky: (dogsType))
                 task.resume()
             }
             
@@ -58,18 +58,18 @@ import AFNetworking
             
             switch sender.selectedSegmentIndex {
             case 0:
-                self.husky = "husky"
+                self.dogsType = "husky"
             case 1:
-                self.husky = "hound"
+                self.dogsType = "hound"
             case 2:
-                self.husky = "pug"
+                self.dogsType = "pug"
             case 3:
-                self.husky = "labrador"
+                self.dogsType = "labrador"
                 
-            default: self.husky = "husky"
+            default: self.dogsType = "husky"
             }
-            let task = loadRequest(husky: (husky))
-            task.resume()
+            let dogsRequest = loadRequest(husky: (dogsType))
+            dogsRequest.resume()
         }
         
         //MARK: Funcoes
@@ -78,13 +78,13 @@ import AFNetworking
             
             let tokenregis:String = defaultValues.string(forKey: "token")!
             
-            let LIST_URL = "https://api-iddog.idwall.co/feed?category=\(husky)"
+            let listUrl = "https://api-iddog.idwall.co/feed?category=\(husky)"
             
             let headers = [
                 "Authorization": tokenregis,
                 "Content-Type": "application/json"
             ]
-            let url = URL(string: LIST_URL)!
+            let url = URL(string: listUrl)!
             var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
             request.httpMethod = "GET"
             request.allHTTPHeaderFields = headers
@@ -126,5 +126,26 @@ import AFNetworking
             
             return cell
         }
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            
+                let cell = self.dogsCollectionView.cellForItem(at: indexPath) as! DogsFeedCollectionViewCell
+                let imageView = UIImageView(image: cell.dogImage.image)
+                imageView.frame = UIScreen.main.bounds
+                imageView.backgroundColor = .black
+                imageView.contentMode = .top
+                imageView.contentMode = .scaleAspectFit
+                imageView.isUserInteractionEnabled = true
+                
+                let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+                imageView.addGestureRecognizer(tap)
+                
+                self.view.addSubview(imageView)
+        }
+        
+        @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+            sender.view?.removeFromSuperview()
+        }
 
 }
+
