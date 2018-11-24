@@ -16,6 +16,7 @@
 		7803794C21A76CEE00D8148F /* ValidationEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803794B21A76CEE00D8148F /* ValidationEmail.swift */; };
 		7803794E21A76EF800D8148F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803794D21A76EF800D8148F /* Alert.swift */; };
 		7803795021A77A1000D8148F /* DodFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803794F21A77A1000D8148F /* DodFeedViewController.swift */; };
+		78F3635721A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3635621A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		7803794B21A76CEE00D8148F /* ValidationEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationEmail.swift; sourceTree = "<group>"; };
 		7803794D21A76EF800D8148F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7803794F21A77A1000D8148F /* DodFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodFeedViewController.swift; sourceTree = "<group>"; };
+		78F3635621A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsFeedCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				7803794F21A77A1000D8148F /* DodFeedViewController.swift */,
 				7803794B21A76CEE00D8148F /* ValidationEmail.swift */,
 				7803792D21A763A900D8148F /* Main.storyboard */,
+				78F3635621A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift */,
 				7803793021A763AB00D8148F /* Assets.xcassets */,
 				7803793221A763AB00D8148F /* LaunchScreen.storyboard */,
 				7803793521A763AB00D8148F /* Info.plist */,
@@ -208,6 +211,7 @@
 			files = (
 				7803795021A77A1000D8148F /* DodFeedViewController.swift in Sources */,
 				7803794C21A76CEE00D8148F /* ValidationEmail.swift in Sources */,
+				78F3635721A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift in Sources */,
 				7803792C21A763A900D8148F /* ViewController.swift in Sources */,
 				7803794E21A76EF800D8148F /* Alert.swift in Sources */,
 				7803792A21A763A900D8148F /* AppDelegate.swift in Sources */,

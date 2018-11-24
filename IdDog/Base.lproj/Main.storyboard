@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--Dod Feed View Controller-->
         <scene sceneID="efz-PI-Kgc">
             <objects>
-                <viewController id="QUI-fo-cD6" sceneMemberID="viewController">
+                <viewController id="QUI-fo-cD6" customClass="DodFeedViewController" customModule="IdDog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS2-qc-Sat">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,6 +89,9 @@
                                     <segment title="Pug"/>
                                     <segment title="labrador"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedDog:" destination="QUI-fo-cD6" eventType="valueChanged" id="gi4-mt-4FX"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="73R-3j-QYI">
                                 <rect key="frame" x="0.0" y="115" width="375" height="552"/>
@@ -100,7 +103,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qYv-pW-qID">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qYv-pW-qID" customClass="DogsFeedCollectionViewCell" customModule="IdDog" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -118,6 +121,9 @@
                                             <constraint firstItem="pD8-vB-DWz" firstAttribute="top" secondItem="qYv-pW-qID" secondAttribute="top" id="uzz-Pb-El4"/>
                                             <constraint firstAttribute="bottom" secondItem="pD8-vB-DWz" secondAttribute="bottom" id="v2L-Rm-fc5"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="dogImage" destination="pD8-vB-DWz" id="Zkg-9v-p0T"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -135,6 +141,10 @@
                         <viewLayoutGuide key="safeArea" id="V4N-bX-8rq"/>
                     </view>
                     <navigationItem key="navigationItem" id="i9j-Zs-db1"/>
+                    <connections>
+                        <outlet property="dogsCollectionView" destination="73R-3j-QYI" id="Ku7-yZ-dYU"/>
+                        <outlet property="dogsSegmentedControl" destination="Jqq-sq-PmH" id="E1W-kM-jAQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gtO-eO-AVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
