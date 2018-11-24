@@ -14,13 +14,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textFieldEmail: UITextField!
     
+    @IBOutlet weak var buttonLogin: UIButton!
     //MARK: Propriedades
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        textFieldEmail.layer.cornerRadius = 20
+        buttonLogin.layer.cornerRadius = 20
+        
     }
     
     //MARK: Actions
@@ -87,7 +90,6 @@ class ViewController: UIViewController {
                                     defaultValues.set(success, forKey: "ISLOGGEDIN")
                                     defaultValues.synchronize()
                                     
-                                    
                                     self.dismiss(animated: true, completion: nil)
                                     
                                     //DispatchQueue
@@ -106,7 +108,6 @@ class ViewController: UIViewController {
                 })
                 task.resume()
                 
-                
             } else {
                 
                 let alerta = UIAlertController(title: "Alerta", message: "E-mail inválido", preferredStyle: .alert)
@@ -116,11 +117,8 @@ class ViewController: UIViewController {
                 alerta.addAction(botaoOk)
                 
                 present(alerta, animated: true, completion: nil)
-                
             }
-            
         }
-        
     }
     
     //MARK: Funcoes

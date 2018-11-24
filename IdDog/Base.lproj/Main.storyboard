@@ -62,6 +62,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buttonLogin" destination="u8Z-gM-oPD" id="Zkc-Pa-8uX"/>
                         <outlet property="textFieldEmail" destination="1t8-iB-hPo" id="9NQ-1x-HvI"/>
                         <segue destination="waE-aZ-BlC" kind="show" identifier="irTela2" id="EPs-Wy-nkl"/>
                     </connections>
@@ -70,7 +71,7 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--Dod Feed View Controller-->
+        <!--ID DOG-->
         <scene sceneID="efz-PI-Kgc">
             <objects>
                 <viewController id="QUI-fo-cD6" customClass="DodFeedViewController" customModule="IdDog" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,13 +90,14 @@
                                     <segment title="Pug"/>
                                     <segment title="labrador"/>
                                 </segments>
+                                <color key="tintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="segmentedDog:" destination="QUI-fo-cD6" eventType="valueChanged" id="gi4-mt-4FX"/>
                                 </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="73R-3j-QYI">
                                 <rect key="frame" x="0.0" y="115" width="375" height="552"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l3o-q2-ILJ">
                                     <size key="itemSize" width="125" height="125"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -140,10 +142,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="V4N-bX-8rq"/>
                     </view>
-                    <navigationItem key="navigationItem" id="i9j-Zs-db1"/>
+                    <navigationItem key="navigationItem" title="ID DOG" id="i9j-Zs-db1">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="5Yy-8g-9BV">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="logout:" destination="QUI-fo-cD6" id="q56-e0-NyT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dogsCollectionView" destination="73R-3j-QYI" id="Ku7-yZ-dYU"/>
                         <outlet property="dogsSegmentedControl" destination="Jqq-sq-PmH" id="E1W-kM-jAQ"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="irTelaLogin" id="Oge-ZQ-iTu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gtO-eO-AVW" userLabel="First Responder" sceneMemberID="firstResponder"/>

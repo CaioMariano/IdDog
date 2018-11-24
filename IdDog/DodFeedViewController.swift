@@ -15,7 +15,6 @@ import AFNetworking
         
         @IBOutlet weak var dogsSegmentedControl: UISegmentedControl!
         
-        
         @IBOutlet weak var dogsCollectionView: UICollectionView!
         
         
@@ -72,8 +71,16 @@ import AFNetworking
             dogsRequest.resume()
         }
         
+        @IBAction func logout(_ sender: UIBarButtonItem) {
+            
+            let appDomain = Bundle.main.bundleIdentifier
+            UserDefaults.standard.removePersistentDomain(forName: appDomain!)
+            performSegue(withIdentifier: "irTelaLogin", sender: self) 
+            
+        }
         //MARK: Funcoes
         
+        //Request
         func loadRequest(husky: String) -> URLSessionTask {
             
             let tokenregis:String = defaultValues.string(forKey: "token")!
@@ -103,7 +110,7 @@ import AFNetworking
             print(dogs)
             return task
             
-        }
+        } // Fechamento request
         
         func numberOfSections(in collectionView: UICollectionView) -> Int {
             return 1
