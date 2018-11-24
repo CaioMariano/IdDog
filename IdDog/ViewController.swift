@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldEmail: UITextField!
     
     @IBOutlet weak var buttonLogin: UIButton!
+    
     //MARK: Propriedades
     
     
@@ -36,26 +37,26 @@ class ViewController: UIViewController {
             
             if isValidEmail(testStr: email) == true {
                 
-                //MARK: Request
+                //MARK: -Request
                 
                 let loginUrl = "https://api-iddog.idwall.co/signup?email=\(email)"
                 
-                let parameter:NSString = "email=\(email)" as NSString
+                let parameter:NSString = "email= \(email)" as NSString
                 
-                print("postData: %@", parameter) // Primeiro Print
+                print("postData:", parameter)
                 
                 let url:NSURL = NSURL(string: loginUrl )!
                 let postData = parameter.data(using: String.Encoding.utf8.rawValue)
                 let postLength: NSString = String(postData!.count) as NSString
-                let request:NSMutableURLRequest = NSMutableURLRequest(url: url as URL)
+                let requestlogin:NSMutableURLRequest = NSMutableURLRequest(url: url as URL)
                 
-                request.httpMethod = "POST"
-                request.httpBody = postData
-                request.setValue(postLength as String, forHTTPHeaderField: "Content-Length")
-                request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-                request.setValue("application/json", forHTTPHeaderField: "Accept")
+                requestlogin.httpMethod = "POST"
+                requestlogin.httpBody = postData
+                requestlogin.setValue(postLength as String, forHTTPHeaderField: "Content-Length")
+                requestlogin.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+                requestlogin.setValue("application/json", forHTTPHeaderField: "Accept")
                 
-                let task = URLSession.shared.dataTask (with: request as URLRequest, completionHandler: {
+                let task = URLSession.shared.dataTask (with: requestlogin as URLRequest, completionHandler: {
                     (data, response, error) in
                     if (error != nil) {
                         print(error!)
@@ -67,17 +68,17 @@ class ViewController: UIViewController {
                             do {
                                 let responseData: NSString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!
                                 
-                                print(responseData) // print Response
+                                //print(responseData)
                                 
                                 let json = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary
                                 
-                                print(json) // print json
+                                //print(json)
                                 
                                 let user:NSDictionary = (json!.value(forKey: "user") as? NSDictionary)!
                                 
                                 let token:NSString = user.value(forKey: "token") as! NSString
                                 
-                                print(token) // print token
+                                //print(token)
                                 
                                 if (user.isEqual(user)) {
                                     
@@ -98,7 +99,7 @@ class ViewController: UIViewController {
                                     }
                                     
                                 } else {
-                                    print("Algo errado aconteceu")
+                                    print("\(error?.localizedDescription)")
                                 }
                             }  catch {
                                 print("Error")
@@ -110,19 +111,9 @@ class ViewController: UIViewController {
                 
             } else {
                 
-                let alerta = UIAlertController(title: "Alerta", message: "E-mail inválido", preferredStyle: .alert)
-                
-                let botaoOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                
-                alerta.addAction(botaoOk)
-                
-                present(alerta, animated: true, completion: nil)
+               self.alert(message: "E-mail inválido", title: "Alerta")
             }
         }
     }
-    
-    //MARK: Funcoes
-    
-    
 }
 

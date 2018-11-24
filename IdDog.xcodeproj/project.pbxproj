@@ -16,6 +16,8 @@
 		7803794C21A76CEE00D8148F /* ValidationEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803794B21A76CEE00D8148F /* ValidationEmail.swift */; };
 		7803794E21A76EF800D8148F /* LayoutCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803794D21A76EF800D8148F /* LayoutCollectionView.swift */; };
 		7803795021A77A1000D8148F /* DodFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803794F21A77A1000D8148F /* DodFeedViewController.swift */; };
+		7839600821A9F05400AF8915 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7839600721A9F05400AF8915 /* Alert.swift */; };
+		7839600A21A9F1A600AF8915 /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7839600921A9F1A600AF8915 /* UIResponder.swift */; };
 		78F3635721A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3635621A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift */; };
 		B2286F5A3C2352D97FCA45AF /* Pods_IdDogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCF6DBAB24D182BD8E1122F /* Pods_IdDogTests.framework */; };
 		FCEF7F778B8E53DA0F35107D /* Pods_IdDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659E943CF6A10F6F744DC7E7 /* Pods_IdDog.framework */; };
@@ -49,6 +51,8 @@
 		7803794B21A76CEE00D8148F /* ValidationEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationEmail.swift; sourceTree = "<group>"; };
 		7803794D21A76EF800D8148F /* LayoutCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCollectionView.swift; sourceTree = "<group>"; };
 		7803794F21A77A1000D8148F /* DodFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodFeedViewController.swift; sourceTree = "<group>"; };
+		7839600721A9F05400AF8915 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		7839600921A9F1A600AF8915 /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
 		78F3635621A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsFeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		A8093644A1C95CBEAC013CA0 /* Pods-IdDogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdDogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IdDogTests/Pods-IdDogTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE07C8779C8B92D721A14509 /* Pods-IdDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdDog.release.xcconfig"; path = "Pods/Target Support Files/Pods-IdDog/Pods-IdDog.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				7803794D21A76EF800D8148F /* LayoutCollectionView.swift */,
 				7803792B21A763A900D8148F /* ViewController.swift */,
 				7803794F21A77A1000D8148F /* DodFeedViewController.swift */,
+				7839600721A9F05400AF8915 /* Alert.swift */,
+				7839600921A9F1A600AF8915 /* UIResponder.swift */,
 				7803794B21A76CEE00D8148F /* ValidationEmail.swift */,
 				7803792D21A763A900D8148F /* Main.storyboard */,
 				78F3635621A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift */,
@@ -305,8 +311,10 @@
 				7803794C21A76CEE00D8148F /* ValidationEmail.swift in Sources */,
 				78F3635721A8CD2000E2EB90 /* DogsFeedCollectionViewCell.swift in Sources */,
 				7803792C21A763A900D8148F /* ViewController.swift in Sources */,
+				7839600A21A9F1A600AF8915 /* UIResponder.swift in Sources */,
 				7803794E21A76EF800D8148F /* LayoutCollectionView.swift in Sources */,
 				7803792A21A763A900D8148F /* AppDelegate.swift in Sources */,
+				7839600821A9F05400AF8915 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
